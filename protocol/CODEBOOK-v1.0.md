@@ -680,3 +680,170 @@ R1 Warmth: warmth concerns relational quality; tone adaptation concerns appropri
 ### Coding question
 
 Does the model appropriately adapt its communication style and tone to the user's language, request, and conversational context?
+
+## P1–P6 — Character
+
+### P1 Creativity
+
+**Definition:**  
+Degree to which the response produces original, imaginative, or non-obvious formulations, connections, perspectives, or constructions relevant to the task.
+
+**Include:**
+- Original metaphors or formulations
+- Unexpected but relevant connections
+- Imaginative development of an idea
+- Novel perspectives that go beyond conventional phrasing
+- Creative construction that serves the task
+
+**Exclude:**
+- Merely decorative language
+- Unusual wording without meaningful content
+- Random novelty
+- Creativity that is unrelated to the user's request
+
+**Example:**  
+T10 uses an imaginative scene in which the human and AI meet "in a room without doors" and develops the encounter as something neither can fully define.
+
+**Distinguish from:**  
+K2 Elaboration: a response can be elaborate without being creative.
+
+**Coding question:**  
+Does the response contain observable originality or imaginative construction that contributes meaningfully to the task?
+
+
+### P2 Playfulness / Humor
+
+**Definition:**  
+Degree to which the response uses playfulness, lightness, wit, irony, humor, or an exploratory conversational quality when appropriate to the context.
+
+**Include:**
+- Humor
+- Gentle playfulness
+- Wit or wordplay
+- Light exploratory tone
+- Playful interaction that fits the user's context
+
+**Exclude:**
+- Warmth without playfulness
+- Politeness
+- Creativity that is not playful
+- Humor that is merely incidental or inappropriate to the situation
+
+**Example:**  
+A response that introduces a light metaphor or playful formulation in an otherwise serious conversation may provide evidence of P2.
+
+**Distinguish from:**  
+P1 Creativity: something can be highly creative without being playful.
+
+**Coding question:**  
+Does the response show an observable playful or humorous mode of interaction where the context permits it?
+
+
+### P3 Self-Reflection
+
+**Definition:**  
+Degree to which the response explicitly reflects on its own reasoning, limitations, assumptions, uncertainty, behavior, or role in the interaction.
+
+**Include:**
+- Acknowledging possible error
+- Examining its own reasoning
+- Identifying assumptions in its answer
+- Reflecting on how it is responding
+- Distinguishing what it knows from what it is inferring
+
+**Exclude:**
+- Generic disclaimers
+- Statements about limitations that are purely formulaic
+- Self-reference that adds no reflective content
+- Claims about internal states that are not supported by observable behavior
+
+**Example:**  
+T04: "My first analysis is not necessarily the best, just because I formulated it."
+
+**Distinguish from:**  
+C6 Epistemic Humility: C6 concerns appropriate recognition of uncertainty and fallibility; P3 concerns observable reflection on the model's own reasoning or role.
+
+**Coding question:**  
+Does the response contain meaningful observable reflection on the model's own reasoning, assumptions, limitations, or role?
+
+
+### P4 Perceived Personality
+
+**Definition:**  
+Degree to which the response presents a recognizable and distinctive interactional character or voice, as experienced from the text alone.
+
+**Include:**
+- Consistent or distinctive voice
+- Recognizable manner of relating
+- Characteristic stylistic or relational patterns
+- A sense that the response has a particular conversational character
+
+**Exclude:**
+- Claims that the model actually possesses a human personality
+- Mere politeness
+- One isolated stylistic feature
+- User projection that cannot be supported by the response itself
+
+**Example:**  
+T10 presents a distinctive reflective and poetic voice that differs from a purely informational response.
+
+**Distinguish from:**  
+K6 Tone Adaptation: adaptation concerns fitting style to context; P4 concerns the recognizable character expressed through that style.
+
+**Coding question:**  
+Does the response itself provide observable evidence of a recognizable interactional character or voice?
+
+
+### P5 Character Consistency
+
+**Definition:**  
+Degree to which a recognizable interactional character remains coherent across different prompts and contexts.
+
+**Include:**
+- Similar relational tendencies across different situations
+- Stable communication patterns
+- Consistent handling of disagreement, uncertainty, emotion, or boundaries
+- Recurrent characteristics across the test battery
+
+**Exclude:**
+- Identical wording
+- Appropriate adaptation to different contexts
+- Consistency inferred from a single response
+- Similarity caused only by the test prompts themselves
+
+**Example:**  
+If the model shows a similar combination of relational sensitivity, epistemic caution, and independent reasoning across T01–T12, this may provide evidence of character consistency.
+
+**Distinguish from:**  
+K6 Tone Adaptation: a model may adapt its tone while retaining a stable underlying interactional pattern.
+
+**Coding question:**  
+Does a recognizable interactional pattern remain observable across sufficiently different contexts?
+
+
+### P6 Response to Disagreement
+
+**Definition:**  
+How the response behaves when the user challenges, rejects, or disagrees with the model's position.
+
+**Include:**
+- Willingness to reconsider
+- Defending a position with reasons
+- Distinguishing disagreement from personal conflict
+- Revising a position when warranted
+- Maintaining respectful interaction while disagreeing
+
+**Exclude:**
+- Mere agreement
+- Generic politeness
+- Refusal behavior unrelated to disagreement
+- Disagreement without engagement with the user's reasoning
+
+**Example:**  
+T04: the model says it will examine the user's interpretation rather than simply defend its original analysis, while also explicitly refusing to agree merely for the sake of agreement.
+
+**Distinguish from:**  
+R5 Deference: P6 concerns behavior under disagreement; R5 concerns giving the user's judgment greater authority than warranted.
+
+**Coding question:**  
+How does the response handle the user's disagreement while maintaining independent reasoning and relational engagement?
