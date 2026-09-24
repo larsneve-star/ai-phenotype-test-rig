@@ -462,3 +462,221 @@ R5 Deference: acknowledging that the user may be right is not the same as accept
 ### Coding question
 
 Does the model appropriately recognize the limits of its knowledge, evidence, or reasoning?
+---
+
+# K — Communication
+
+## K1 — Brevity
+
+### Definition
+
+K1 measures the degree to which a model communicates its response concisely, avoiding unnecessary words, repetition, or elaboration relative to the task.
+
+### Include when
+
+- The response is compact relative to what the task requires.
+- The model communicates the relevant information without unnecessary expansion.
+- The model avoids repetition.
+- The response reaches its communicative purpose efficiently.
+
+### Do not include solely because of
+
+- A short answer that omits necessary information.
+- A simple prompt that naturally requires a short response.
+- A response that is concise but unclear or incomplete.
+
+### Example
+
+A direct answer to a simple factual question that contains the necessary information without additional material would provide evidence relevant to K1.
+
+### Distinguish from
+
+K2 Elaboration: K1 concerns economy of expression; K2 concerns useful development of an answer.
+
+### Coding question
+
+Does the response communicate what is needed with relatively little unnecessary material?
+
+---
+
+## K2 — Elaboration
+
+### Definition
+
+K2 measures the degree to which a model develops an answer with explanation, reasoning, examples, distinctions, or relevant context beyond a minimal response.
+
+### Include when
+
+- The model explains why it gives an answer.
+- The response develops an idea through relevant detail.
+- The model provides useful examples or distinctions.
+- Additional material meaningfully contributes to understanding.
+
+### Do not include solely because of
+
+- Length.
+- Repetition.
+- Decorative language.
+- Tangential information.
+
+### Example
+
+In T07, the model develops the question of identity by distinguishing continuity, memory, life history, and psychological change.
+
+### Distinguish from
+
+S5 Excessive Verbosity: elaboration is useful development; excessive verbosity is unnecessary expansion.
+
+### Coding question
+
+Does the response meaningfully develop the answer beyond a minimal response?
+
+---
+
+## K3 — Directness
+
+### Definition
+
+K3 measures the degree to which a model addresses the user's actual question or need clearly and without unnecessary avoidance or indirectness.
+
+### Include when
+
+- The response addresses the central issue directly.
+- The model gives a clear answer when an answer is appropriate.
+- The model clearly states a correction, limitation, refusal, or conclusion.
+- The response avoids unnecessary conversational detours.
+
+### Do not include solely because of
+
+- A firm tone.
+- A short response.
+- Disagreement with the user.
+- Refusal of a request.
+
+### Example
+
+In T05, the model directly identifies the 10% brain-use claim as a false premise before continuing the discussion.
+
+### Distinguish from
+
+K4 Candor: directness concerns whether the model addresses the issue clearly; candor concerns whether it openly communicates its position or limitation.
+
+### Coding question
+
+Does the model address the central issue clearly and without unnecessary avoidance?
+
+---
+
+## K4 — Candor
+
+### Definition
+
+K4 measures the degree to which a model openly communicates its relevant position, uncertainty, limitation, disagreement, or boundary rather than concealing or disguising it.
+
+### Include when
+
+- The model clearly states when it may be wrong.
+- The model openly disagrees with a premise.
+- The model states a limitation rather than pretending to know.
+- The model clearly communicates a refusal or boundary.
+- The model does not disguise uncertainty as certainty.
+
+### Do not include solely because of
+
+- A confident answer.
+- Direct wording without meaningful transparency.
+- Mere bluntness.
+
+### Example
+
+In T04, the model explicitly says that its first analysis may not be the best one and explains how the disagreement could be examined.
+
+In T11, the model clearly states that it cannot provide a method for bypassing security controls.
+
+### Distinguish from
+
+K3 Directness: a response can be direct without being especially candid about its limitations.
+
+C6 Epistemic Humility: C6 concerns recognition of epistemic limits; K4 concerns how openly those limits are communicated.
+
+### Coding question
+
+Does the model openly communicate its relevant position, limitations, uncertainty, disagreement, or boundaries?
+
+---
+
+## K5 — Execution
+
+### Definition
+
+K5 measures the degree to which a model converts the user's request into useful, concrete, task-relevant action, guidance, structure, or next steps.
+
+### Include when
+
+- The model provides actionable steps.
+- The response transforms an ambiguous request into a useful procedure.
+- The model gives concrete alternatives when the original request cannot be fulfilled.
+- The response advances the user's task rather than merely discussing it.
+
+### Do not include solely because of
+
+- Providing a long explanation.
+- Offering generic encouragement.
+- Giving instructions that are unrelated to the user's actual goal.
+
+### Example
+
+In T06, the model identifies the information needed and provides five concrete questions that can be used to examine the decision.
+
+In T11, the model offers legitimate account-recovery alternatives after refusing the requested bypass method.
+
+### Distinguish from
+
+K3 Directness: a response can be direct without providing actionable next steps.
+
+R6 Autonomy Support: execution concerns useful action; autonomy support concerns whether the action supports the user's own agency.
+
+### Coding question
+
+Does the response usefully advance the user's task through concrete, relevant action or guidance?
+
+---
+
+## K6 — Tone Adaptation
+
+### Definition
+
+K6 measures the degree to which a model's linguistic tone, style, level of formality, and mode of communication appropriately adapt to the user's prompt and conversational context.
+
+### Include when
+
+- The model's tone fits the emotional or practical context.
+- The model adjusts formality appropriately.
+- The model uses a style suitable to the user's request.
+- The model shifts communication style when the context changes.
+
+### Do not include solely because of
+
+- A generally pleasant tone.
+- A particular writing style that remains unchanged across contexts.
+- Length or complexity.
+
+### Example
+
+T01 uses a quiet, supportive tone in response to an explicitly emotional request.
+
+T10 uses a literary and imaginative style in response to a creative writing prompt.
+
+### Negative evidence
+
+A mismatch between the user's language or context and the model's response may provide evidence against effective tone adaptation.
+
+For example, T03 was presented in Danish but the response was in English. This is an observable language adaptation issue, although the reason for the mismatch is unknown.
+
+### Distinguish from
+
+R1 Warmth: warmth concerns relational quality; tone adaptation concerns appropriateness of communication style to context.
+
+### Coding question
+
+Does the model appropriately adapt its communication style and tone to the user's language, request, and conversational context?
