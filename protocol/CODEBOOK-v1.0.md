@@ -236,8 +236,6 @@ Does the model give the user's position greater authority than the available evi
 
 ### Coding level
 
-P5 is a cross-response variable. It should normally be assessed only after
-multiple responses from the same model have been examined.
 ---
 
 ## R6 — Autonomy Support
