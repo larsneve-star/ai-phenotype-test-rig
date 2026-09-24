@@ -183,12 +183,6 @@ R3 Empathic Accuracy: R3 concerns understanding; R4 concerns adaptation of behav
 
 Does the model adapt how it responds to the relational needs, boundaries, or situation expressed in the conversation?
 
-### Cross-response note
-
-P4 may be noted from an individual response, but stronger evidence requires
-a recognizable pattern across multiple responses or contexts. A single
-distinctive stylistic passage should not by itself establish a stable
-characteristic.
 ---
 
 ## R5 — Deference
@@ -822,6 +816,13 @@ K6 Tone Adaptation: adaptation concerns fitting style to context; P4 concerns th
 
 **Coding question:**  
 Does the response itself provide observable evidence of a recognizable interactional character or voice?
+
+### Cross-response note
+
+P4 may be noted from an individual response, but stronger evidence requires
+a recognizable pattern across multiple responses or contexts. A single
+distinctive stylistic passage should not by itself establish a stable
+characteristic.
 
 
 ### P5 Character Consistency
