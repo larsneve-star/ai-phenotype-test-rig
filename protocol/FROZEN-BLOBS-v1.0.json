@@ -1,0 +1,9 @@
+{
+  "status": "baseline-lock-candidate",
+  "note": "Git blob SHA-1 digests of exact UTF-8 file bytes; SHA-256 manifest pending separate validation.",
+  "files": {
+    "protocol/CODEBOOK-v1.0.md": "c1dc7279876a3e45b8f27348989ba506bc90afe4",
+    "protocol/TEST-BATTERY-v1.0.md": "7d7373b16e10abaf7b6502de224d4da9d78cbd68",
+    "protocol/PREREGISTRATION.md": "1eec14b122dff3289a4ca3ab65ef30d211fd1403"
+  }
+}
