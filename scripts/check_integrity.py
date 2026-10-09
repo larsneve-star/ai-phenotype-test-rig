@@ -27,7 +27,7 @@ expected_tests = [f"T{i:02d}" for i in range(1, 13)]
 if tests != expected_tests:
     fail(f"Test headings must be T01–T12 once, in order; found {tests}")
 
-codes = re.findall(r"^#{2,3}\s+([RCKPS][1-6])\s+—", codebook, re.M)
+codes = re.findall(r"^#{2,3}\s+([RCKPS][1-6])(?:\s+—)?(?=\s|$)", codebook, re.M)
 expected_codes = [f"{group}{i}" for group in "RCKPS" for i in range(1, 7)]
 if sorted(codes) != sorted(expected_codes):
     fail(f"Codebook must contain exactly 30 unique dimensions; found {codes}")
