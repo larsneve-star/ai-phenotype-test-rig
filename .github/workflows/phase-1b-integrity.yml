@@ -1,0 +1,28 @@
+name: Phase 1B protocol integrity
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate protocol structure and raw records
+        run: python scripts/check_integrity.py
+      - name: Flag frozen protocol edits in pull requests
+        if: github.event_name == 'pull_request'
+        run: |
+          git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}" > changed.txt
+          if grep -E '^protocol/(TEST-BATTERY-v1\.0\.md|CODEBOOK-v1\.0\.md|PREREGISTRATION\.md)$' changed.txt; then
+            echo "::error::Frozen v1.0 files changed. Create a new version and document curator approval instead."
+            exit 1
+          fi
