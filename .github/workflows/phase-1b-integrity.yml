@@ -18,6 +18,8 @@ jobs:
           python-version: '3.12'
       - name: Validate protocol structure and raw records
         run: python scripts/check_integrity.py
+      - name: Verify exact frozen baseline bytes
+        run: python scripts/verify_frozen.py
       - name: Flag frozen protocol edits in pull requests
         if: github.event_name == 'pull_request'
         run: |
