@@ -1,0 +1,25 @@
+name: Six Mirrors public metadata checks
+on:
+  pull_request:
+    paths:
+      - 'experiments/six-mirrors/**'
+      - '.github/workflows/six-mirrors-validate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python experiments/six-mirrors/scripts/validate_sessions.py
+      - name: Ensure no raw result directories are committed
+        shell: bash
+        run: |
+          if git ls-files 'experiments/six-mirrors/raw/**' 'experiments/six-mirrors/results/**' | grep .; then
+            echo 'Raw/results files are prohibited in this public repository.'
+            exit 1
+          fi
